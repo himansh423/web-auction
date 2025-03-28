@@ -1,14 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body>
+  <body class="bg-gray-900 text-white min-h-screen">
+    <div class="max-w-4xl mx-auto p-6">
+      <!-- header navigation yaha se -->
+      <nav class="flex justify-between items-center mb-8">
+        <div class="flex items-center">
+          <span class="text-xl font-bold text-green-500">EduTrack</span>
+        </div>
+        <div class="flex space-x-4">
+          <a
+            href="/web-auction/index.html"
+            class="text-gray-300 hover:text-white"
+            >Dashboard</a
+          >
+          <a
+            href="/web-auction/index.html"
+            class="text-gray-300 hover:text-white"
+            >Courses</a
+          >
+          <a
+            href="/web-auction/index.html"
+            class="text-gray-300 hover:text-white"
+            >Calendar</a
+          >
+          <a href="/web-auction/index.html" class="text-green-500 font-semibold"
+            >Attendance</a
+          >
+        </div>
+        <div
+          class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center text-white"
+        >
+          <span>A</span>
+        </div>
+      </nav>
 
+      <!-- main content hai -->
+      <h1 class="text-3xl font-bold mb-6">Missed Class Recovery</h1>
 
-    <script src="script.js"></script>
+      <div class="flex space-x-6">
+        <!-- left side: topics hai -->
+        <div class="w-1/2 space-y-4">
+          <div class="bg-gray-800 p-4 rounded-lg border border-gray-700">
+            <div class="flex justify-between items-center mb-2">
+              <h2 class="text-lg font-semibold text-green-500">
+                Linear Equations
+              </h2>
+            </div>
+            <p class="text-gray-400">
+              Solving systems of linear equations using elimination and
+              substitution methods.
+            </p>
+            <div class="text-sm text-gray-500 mt-2">9:00 - 10:30 AM</div>
+          </div>
+
+          <div class="bg-gray-800 p-4 rounded-lg border border-gray-700">
+            <div class="flex justify-between items-center mb-2">
+              <h2 class="text-lg font-semibold text-green-500">
+                Matrix Operations
+              </h2>
+            </div>
+            <p class="text-gray-400">
+              Addition, subtraction, and multiplication of matrices with
+              practical examples.
+            </p>
+            <div class="text-sm text-gray-500 mt-2">10:45 - 12:15 PM</div>
+          </div>
+
+          <div class="bg-gray-800 p-4 rounded-lg border border-gray-700">
+            <div class="flex justify-between items-center mb-2">
+              <h2 class="text-lg font-semibold text-green-500">Determinants</h2>
+            </div>
+            <p class="text-gray-400">
+              Calculating determinants and their applications in solving linear
+              systems.
+            </p>
+            <div class="text-sm text-gray-500 mt-2">1:30 - 3:00 PM</div>
+          </div>
+        </div>
+
+        <!-- right side: ask questions hai -->
+        <div class="w-1/2 bg-gray-800 p-6 rounded-lg border border-gray-700">
+          <h2 class="text-xl font-semibold mb-4 text-green-500">
+            Ask Questions
+          </h2>
+          <p class="text-gray-400 mb-4">
+            Have questions about the topics you missed? Ask your teacher below.
+          </p>
+
+          <div class="mb-4">
+            <label class="block text-sm font-medium text-gray-300 mb-2"
+              >Selected Topic</label
+            >
+            <div class="relative">
+              <select
+                class="w-full bg-gray-700 border border-gray-600 text-white py-2 px-3 rounded-lg appearance-none"
+              >
+                <option>Linear Equations</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="mb-4">
+            <label class="block text-sm font-medium text-gray-300 mb-2"
+              >Your Question</label
+            >
+            <textarea
+              class="w-full bg-gray-700 border border-gray-600 text-white py-2 px-3 rounded-lg h-32"
+              placeholder="I need help understanding how to solve systems of linear equations..."
+            ></textarea>
+          </div>
+
+          <button
+            class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300"
+          >
+            Submit Question
+          </button>
+
+          <div class="mt-4 flex justify-between text-sm text-gray-400">
+            <a href="#" class="hover:text-white">View Resources</a>
+            <a href="#" class="hover:text-white">Contact Instructor</a>
+          </div>
+          <div class="text-xs text-gray-500 mt-4">
+            Your teacher typically responds within 24 hours
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div class="text-center text-gray-500 text-xs mt-8">
+        © 2025 EduTrack. All rights reserved.
+      </div>
+    </div>
   </body>
 </html>
